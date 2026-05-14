@@ -215,17 +215,18 @@ ul { list-style: none; }
 .hero__bg {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(135deg, rgba(26,39,68,0.92) 0%, rgba(26,39,68,0.75) 50%, rgba(199,91,58,0.4) 100%);
-  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
 }
-.hero__bg::before {
+.hero__bg::after {
   content: '';
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 20% 80%, rgba(212,168,67,0.15) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 20%, rgba(199,91,58,0.1) 0%, transparent 60%);
+    linear-gradient(135deg, rgba(26,39,68,0.82) 0%, rgba(26,39,68,0.6) 50%, rgba(199,91,58,0.35) 100%);
+  z-index: 1;
 }
 .hero__content {
   position: relative;
@@ -1018,6 +1019,42 @@ ul { list-style: none; }
   background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
   padding: 140px 0 60px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.page-header--image {
+  padding: 160px 0 80px;
+}
+.page-header--image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.page-header--image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(26,39,68,0.85) 0%, rgba(26,39,68,0.7) 100%);
+  z-index: 1;
+}
+.page-header--image .container {
+  position: relative;
+  z-index: 2;
+}
+.page-header--storefronts::before {
+  background-image: url('https://d8j0ntlcm91z4.cloudfront.net/user_398e9kLQt6ZbM34KjjmBdLQ12pl/hf_20260514_030806_3ef81d17-cb13-43f7-b3d1-5c54c61c32d5_min.webp');
+}
+.page-header--aerial::before {
+  background-image: url('https://d8j0ntlcm91z4.cloudfront.net/user_398e9kLQt6ZbM34KjjmBdLQ12pl/hf_20260514_030809_2b55371f-c37c-47f7-9dd3-a12b1add9683_min.webp');
+}
+.page-header--district::before {
+  background-image: url('https://d8j0ntlcm91z4.cloudfront.net/user_398e9kLQt6ZbM34KjjmBdLQ12pl/hf_20260514_030806_2d02a430-6ea5-425b-90ee-c2e3fc892006_min.webp');
+}
+.page-header--hero::before {
+  background-image: url('https://d8j0ntlcm91z4.cloudfront.net/user_398e9kLQt6ZbM34KjjmBdLQ12pl/hf_20260514_030802_1f102ca0-4f50-47e6-8dca-51a78dc119c4_min.webp');
 }
 .page-header .section-tag { color: var(--color-gold); }
 .page-header__title {
