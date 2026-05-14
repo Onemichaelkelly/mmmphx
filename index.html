@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miracle Mile PHX — Phoenix's Original Shopping District</title>
+  <meta name="description" content="Explore 80+ locally owned businesses on McDowell Road in Phoenix. Restaurants, shops, breweries, and more in Arizona's first commercial district outside downtown.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">⌒</span>
+        <span class="nav__logo-text">MIRACLE MILE<span class="nav__logo-sub">PHX</span></span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="visit.html">Visit</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="association.html">Association</a></li>
+        <li><a href="association.html#contact" class="nav__cta">Get Involved</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__content">
+      <p class="hero__tag">Est. 1946 &mdash; McDowell Road, Phoenix</p>
+      <h1 class="hero__title">Phoenix's Original<br>Shopping District</h1>
+      <p class="hero__sub">80+ locally owned businesses. Diverse food. Vintage finds.<br>A mile of culture on McDowell Road.</p>
+      <div class="hero__actions">
+        <a href="directory.html" class="btn btn--primary">Explore the Mile</a>
+        <a href="visit.html" class="btn btn--outline">Plan Your Visit</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="80">0</span><span class="hero__stat-plus">+</span>
+          <span class="hero__stat-label">Local Businesses</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="60">0</span><span class="hero__stat-plus">%</span>
+          <span class="hero__stat-label">Minority Owned</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="78">0</span>
+          <span class="hero__stat-label">Years of History</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll to explore</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- HIGHLIGHTS -->
+  <section class="highlights">
+    <div class="container">
+      <div class="highlights__grid">
+        <a href="directory.html" class="highlight-card">
+          <div class="highlight-card__icon">&#127963;</div>
+          <h3>80+ Businesses</h3>
+          <p>From craft breweries to rare plant shops, Salvadoran pupusas to mid-century furniture.</p>
+          <span class="highlight-card__link">Browse Directory &rarr;</span>
+        </a>
+        <a href="events.html" class="highlight-card">
+          <div class="highlight-card__icon">&#127910;</div>
+          <h3>Events & Markets</h3>
+          <p>Miracle Mile Days, Mercado on Miracle Mile, merchant mixers, and pop-up shops.</p>
+          <span class="highlight-card__link">See What's Happening &rarr;</span>
+        </a>
+        <a href="story.html" class="highlight-card">
+          <div class="highlight-card__icon">&#127961;</div>
+          <h3>78 Years of History</h3>
+          <p>From postwar boom to the Gateway Arch to today's revival. A story unlike any other in Phoenix.</p>
+          <span class="highlight-card__link">Read Our Story &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED BUSINESSES -->
+  <section class="featured">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Featured on the Mile</p>
+        <h2 class="section-title">Local Favorites</h2>
+      </div>
+      <div class="featured__grid" id="featuredGrid">
+        <!-- Filled by JS -->
+      </div>
+      <div class="featured__cta">
+        <a href="directory.html" class="btn btn--primary">View All Businesses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP CALLOUT -->
+  <section class="map-callout">
+    <div class="container">
+      <div class="map-callout__inner">
+        <div class="map-callout__text">
+          <h3>Find Us on McDowell Road</h3>
+          <p>The Miracle Mile stretches along East McDowell Road from roughly 7th Street to SR-51 in central Phoenix. Street parking available throughout the district.</p>
+          <a href="visit.html" class="btn btn--primary">Plan Your Visit</a>
+        </div>
+        <div class="map-callout__map">
+          <div class="map-placeholder">
+            <div class="map-placeholder__road">
+              <span class="map-placeholder__label-road">E McDowell Rd</span>
+            </div>
+            <div class="map-placeholder__pins">
+              <span class="map-pin" style="left:10%">7th St</span>
+              <span class="map-pin" style="left:30%">12th St</span>
+              <span class="map-pin" style="left:50%">16th St</span>
+              <span class="map-pin accent" style="left:65%">Gateway Arch</span>
+              <span class="map-pin" style="left:80%">20th St</span>
+              <span class="map-pin" style="left:95%">SR-51</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner__inner">
+        <div>
+          <h2>Own a Business on the Mile?</h2>
+          <p>Join the Miracle Mile Merchants Association. Get listed in the directory, promote your events, and connect with the community.</p>
+        </div>
+        <a href="association.html" class="btn btn--primary btn--lg">Join the Association</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="nav__logo-icon">⌒</span>
+          <span class="footer__name">Miracle Mile PHX</span>
+          <p class="footer__tagline">Phoenix's Original Shopping District</p>
+        </div>
+        <div class="footer__links">
+          <a href="directory.html">Directory</a>
+          <a href="visit.html">Visit</a>
+          <a href="events.html">Events</a>
+          <a href="story.html">Our Story</a>
+          <a href="association.html">Association</a>
+          <a href="association.html#contact">Contact</a>
+        </div>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/mmmphx/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/MiracleMileMcDowell" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Miracle Mile Merchants Association. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/businesses.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Directory — Miracle Mile PHX</title>
+  <meta name="description" content="Browse 80+ locally owned businesses on Phoenix's Miracle Mile. Filter by food, shopping, services, and arts. Find your next favorite spot on McDowell Road.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav nav--scrolled" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">⌒</span>
+        <span class="nav__logo-text">MIRACLE MILE<span class="nav__logo-sub">PHX</span></span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="visit.html">Visit</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="association.html">Association</a></li>
+        <li><a href="association.html#contact" class="nav__cta">Get Involved</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <p class="section-tag">Business Directory</p>
+      <h1 class="page-header__title">Discover the Mile</h1>
+      <p class="page-header__sub">From craft breweries to rare plant shops, Salvadoran pupusas to mid-century furniture — the Mile has it all.</p>
+    </div>
+  </header>
+
+  <!-- DIRECTORY -->
+  <section class="directory" id="directory">
+    <div class="container">
+      <div class="directory__controls">
+        <div class="directory__filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="food">Food & Drink</button>
+          <button class="filter-btn" data-filter="shop">Shopping</button>
+          <button class="filter-btn" data-filter="services">Services</button>
+          <button class="filter-btn" data-filter="arts">Arts & Culture</button>
+        </div>
+        <div class="directory__search">
+          <input type="text" id="directorySearch" placeholder="Search businesses..." class="search-input">
+        </div>
+      </div>
+
+      <div class="directory__count" id="directoryCount"></div>
+
+      <div class="directory__grid" id="directoryGrid"></div>
+
+      <div class="directory__empty" id="directoryEmpty" style="display:none;">
+        <p>No businesses match your search. Try a different term or category.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADD BUSINESS CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner__inner">
+        <div>
+          <h2>Don't See Your Business?</h2>
+          <p>If you're on the Mile and not in the directory yet, let us know. We'll get you listed for free.</p>
+        </div>
+        <a href="association.html#contact" class="btn btn--primary btn--lg">Add My Business</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="nav__logo-icon">⌒</span>
+          <span class="footer__name">Miracle Mile PHX</span>
+          <p class="footer__tagline">Phoenix's Original Shopping District</p>
+        </div>
+        <div class="footer__links">
+          <a href="directory.html">Directory</a>
+          <a href="visit.html">Visit</a>
+          <a href="events.html">Events</a>
+          <a href="story.html">Our Story</a>
+          <a href="association.html">Association</a>
+          <a href="association.html#contact">Contact</a>
+        </div>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/mmmphx/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/MiracleMileMcDowell" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Miracle Mile Merchants Association. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/businesses.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
